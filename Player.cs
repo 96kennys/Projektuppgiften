@@ -1,8 +1,9 @@
-﻿ using UnityEngine;
-using System.Collections;
-/*
- * Author: Kent Nystedt Björknässgymnasiet TE12 
+﻿/**
+ * @author © Kent Nystedt Björknäsgymansiet TE12
  */
+using UnityEngine;
+using System.Collections;
+
 //Komponenten Controller2D KRÄVS för programmet funktionalitet
 [RequireComponent (typeof(Controller2D))]
 public class Player : MonoBehaviour {

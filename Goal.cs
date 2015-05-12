@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿/**
+ * @author © Kent Nystedt Björknäsgymansiet TE12
+ */
+using UnityEngine;
 using System.Collections;
 
 /*Klassen implementeras i fysikmotorn BoxCollider2D
@@ -7,11 +10,14 @@ using System.Collections;
  */
 public class Goal : MonoBehaviour {
 	
-	void onTriggerEnter(Collider other){
-		if(other.gameObject.tag == "Goal"){
+	void onCollisionEnter(Collision other){
+		//Ifall objectet som passerar har taggen "Goal" skriv ut "asd"
+		print("Fungerar");
+		if(other.gameObject.tag == "Cylinder"){
 			print("asd");
 		}
-		if(other.gameObject.name == "Goal"){
+		// -||- namnet "Goal" -||- "asd"
+		if(other.gameObject.name == "Cylinder"){
 			print("asd");
 		}
 	}

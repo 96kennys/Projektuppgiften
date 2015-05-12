@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿
+using UnityEngine;
 using System.Collections;
 
 //Kräver komponenten BoxCollider2D av superklassen BoxCollider2D 
@@ -35,9 +36,7 @@ public class Controller2D : MonoBehaviour {
 		CalculateRaySpacing ();
 	}
 
-	/*Rör spelaren med en hastighetsvektor mot vektornsriktningen och tilldelar hastigheten i y- och x-led en kollition
-	*
-	*/
+	//Rör spelaren med en hastighetsvektor mot vektornsriktningen och tilldelar hastigheten i y- och x-led en kollition
 	public void Move(Vector3 velocity) {
 		
 		UpdateRaycastOrigins ();
