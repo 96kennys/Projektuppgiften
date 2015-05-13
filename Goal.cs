@@ -10,10 +10,10 @@ using System.Collections;
  */
 public class Goal : MonoBehaviour {
 	
-	void onCollisionEnter(Collision other){
+	void onCollisionEnter2D(Collider2D other){
 		//Ifall objectet som passerar har taggen "Goal" skriv ut "asd"
 		print("Fungerar");
-		if(other.gameObject.tag == "Cylinder"){
+		if(other.gameObject.tag == "Player"){
 			print("asd");
 		}
 		// -||- namnet "Goal" -||- "asd"

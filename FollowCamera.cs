@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿/**
+ * @author © Kent Nystedt Björknäsgymansiet TE12
+ */
+using UnityEngine;
 using System.Collections;
 
 public class FollowCamera : MonoBehaviour {
@@ -11,10 +14,12 @@ public class FollowCamera : MonoBehaviour {
 	public Vector3 offset;
 	Vector3 targetPos;
 
+	// Ändrar positionen efter siktet
 	void Start () {
 		targetPos = transform.position;
 	}
 	
+	// Updaterar en gång per bildrutan ifall målet är satt
 	void FixedUpdate () {
 		if (target)
 		{
@@ -32,4 +37,3 @@ public class FollowCamera : MonoBehaviour {
 		}
 	}
 }
-
